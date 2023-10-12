@@ -8,6 +8,14 @@
   * @retval          the result of gcd
   */
  int gcd(int a, int b);
+  /**
+  * @brief           find the Least Common Multiple
+  * @param[in]       a: one of the integer
+  * @param[in]       b: one of the integer
+  * @return          int
+  * @retval          the result of lcm
+  */
+ int lcm(int a,int b);
 
  /**
   * @brief           find the Greatest Common Divisor
@@ -25,4 +33,16 @@
          b=r;    
      }
      return b; 
+ }
+
+  /**
+  * @brief           find the Least Common Multiple
+  * @param[in]       a: one of the integer
+  * @param[in]       b: one of the integer
+  * @return          int
+  * @retval          the result of lcm
+  */
+ int lcm(int a, int b)
+ {
+         return a/gcd(a,b)*b;
  }
